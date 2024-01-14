@@ -27,7 +27,7 @@ const Navbar = () => {
       {authContextValue?.user &&
         (authContextValue.user.username && authContextValue.user.jobTitle ? (
           <Menu>
-            <MenuButton as={Box}>
+            <MenuButton sx={{ cursor: 'pointer' }} as={Box}>
               <Flex align="center" gap={4}>
                 <Box
                   w="44px"

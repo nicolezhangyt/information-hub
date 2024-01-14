@@ -37,10 +37,12 @@ const WelcomeModal = ({
     await authContextValue?.updateUser?.(username, jobTitle);
     setUpdating(false);
     // reset
-    setSlideType('Username');
-    setUsername('');
-    setJobTitle('');
+    reset();
+    onClose();
+  };
 
+  const onCloseModal = () => {
+    reset();
     onClose();
   };
 
@@ -50,13 +52,14 @@ const WelcomeModal = ({
     }
   };
 
+  const reset = () => {
+    setSlideType('Username');
+    setUsername('');
+    setJobTitle('');
+  };
+
   return (
-    <Modal
-      closeOnOverlayClick={false}
-      isOpen={isOpen}
-      onClose={onClose}
-      trapFocus={false}
-    >
+    <Modal closeOnOverlayClick={false} isOpen={isOpen} onClose={onCloseModal}>
       <ModalOverlay />
       <ModalContent>
         {showClose && !updating && <ModalCloseButton />}

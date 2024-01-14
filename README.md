@@ -26,4 +26,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 The project is deployed on Vercel and can be accessed at the following URL:
 
-[Production Deployment](https://)
+[Information hub production URL](https://information-hub.vercel.app)

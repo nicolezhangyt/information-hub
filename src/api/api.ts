@@ -1,7 +1,9 @@
 import { User } from '../types/types';
 import * as Server from '../utils/server';
 
-// This file contains mock API functions that use localStorage to store and retrieve data.
+/**
+ * Mock API functions that use local storage o store and retrieve data.
+ */
 
 // sign up and create new user flow
 export const signup = (user: User): Promise<User> => {
