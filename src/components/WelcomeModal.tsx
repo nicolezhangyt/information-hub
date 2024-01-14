@@ -36,7 +36,6 @@ const WelcomeModal = ({
     setUpdating(true);
     await authContextValue?.updateUser?.(username, jobTitle);
     setUpdating(false);
-    // reset
     reset();
     onClose();
   };
@@ -52,6 +51,7 @@ const WelcomeModal = ({
     }
   };
 
+  // reset modal to initial state
   const reset = () => {
     setSlideType('Username');
     setUsername('');
