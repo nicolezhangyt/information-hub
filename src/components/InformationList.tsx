@@ -56,7 +56,7 @@ const InformationList = () => {
       <Heading>Information Page</Heading>
       <List spacing={2} mt={8}>
         {data?.characters.results.map((character) => (
-          <ListItem onClick={() => onItemClick(character)}>
+          <ListItem key={character.id} onClick={() => onItemClick(character)}>
             <Card
               variant="outline"
               sx={{

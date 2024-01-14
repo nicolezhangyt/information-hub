@@ -91,7 +91,7 @@ const Login = () => {
             <Text mt={4}>
               {pageType === 'Login' ? (
                 <>
-                  Don't have an account?{' '}
+                  Don&apos;t have an account?{' '}
                   <Button variant="link" onClick={() => setPageType('Sign up')}>
                     Sign up
                   </Button>
