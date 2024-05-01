@@ -1,4 +1,6 @@
-# Solution Documentation
+## Introduction
+
+Information Hub is a web-based platform designed to centralize and organize various types of information, accessible only to registered users. Users can sign up, log in, and access a wealth of information tailored to their interests and needs.
 
 ## Getting Started
 
